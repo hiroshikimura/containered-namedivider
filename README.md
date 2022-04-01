@@ -1,7 +1,7 @@
 ### こんな感じ
 ```
 > docker compose up -d
-(この後エラーが出るけど(･з･)ｷﾆｽﾙﾅ!)
-> curl -X POST -H "Content-type: application/json" http://localhost:28000/divide -d '{"names":["竈門炭治郎", "竈門禰豆子"]}'
-{"divided_names":[{"family":"竈門","given":"炭治郎","separator":" ","score":0.3004587452426102,"algorithm":"kanji_feature"},{"family":"竈門","given":"禰豆子","separator":" ","score":0.30480429696983175,"algorithm":"kanji_feature"}]}%                                                                            
+(この後エラーが出るけど気にしない)
+> curl -X POST -H "Content-type: application/json" http://localhost:28000/divide -d '{"names":["島崎藤村", "滝廉太郎"]}'
+{"divided_names":[{"family":"島崎","given":"藤村","separator":" ","score":0.3838098423116366,"algorithm":"kanji_feature"},{"family":"滝","given":"廉太郎","separator":" ","score":0.5304944367777146,"algorithm":"kanji_feature"}]}%
 ```
