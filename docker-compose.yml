@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  namedivider:
+    image: rskmoi/namedivider-api
+    ports:
+      - '28000:8000'
+networks:
+  namedivider_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.31.0.0/16
